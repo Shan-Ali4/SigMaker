@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <title>SigMaker</title>
+</head>
+<body>
+    <div>
+        <div class="top">
+            <div class="black">
+                <p>Text Color Picker</p>
+                <input class="form-control" type="color" id="textColorPicker">
+            </div>
+            <div class="black">
+                <p>Background</p>
+                <input class="form-control" type="color" id="bgColorPicker">
+            </div>
+            <div class="black">
+                <p>Font Size</p>
+                <select name="" id="fontsize">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="15">15px</option>
+                    <option value="20">20px</option>
+                    <option value="25">25px</option>
+                </select>
+            </div>
+        </div>
+        <canvas class="canvas" id="myCanvas" width="800" height="500" style="border: 20px solid black;"></canvas>
+        <div class="bottom">
+            <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+            <button type="button" class="btn btn-success" id="saveButton">Save & Download</button>
+            <button type="button" class="btn btn-warning" id="retriveButton">Retrieve saved Siganture</button>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
